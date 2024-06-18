@@ -152,9 +152,11 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** Files in a container are not persistent by default, so all data is lost when the container is deleted.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+Files in a container are not persistent by default, so all data is lost when the container is deleted.
 
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** Yes.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+Yes.
 
 ## Running your own container with persistent storage
 
