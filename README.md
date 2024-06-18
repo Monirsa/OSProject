@@ -1,8 +1,8 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: He&She 
 
-Section: __Fill your class section__. 
+Section: 3 
 
 Team Mates:
 1. Monir - 2128031
