@@ -6,7 +6,7 @@ Section: __Fill your class section__.
 
 Team Mates:
 1. Monir - 2128031
-2. __Fill name__ and __matric no__
+2. Nur Ain Mohamad Hisham - 2216894
 3. __Fill name__ and __matric no__
 
 ## Rules
