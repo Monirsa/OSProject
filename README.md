@@ -225,7 +225,7 @@ The user is workspace, and the group is myroot.
 80
  ```
 3. What port is open for http protocol on the host machine? ***(1 mark)*** ```bash
- 8080
+8080
  ```
 
 ## Create SUB Networks
