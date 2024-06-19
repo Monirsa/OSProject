@@ -578,8 +578,9 @@ docker exec c1 ping c2
 ***Questions:***
 
 1. Are you able to ping? Show your output . ***(1 mark)***
+   
  ```bash
- Yes, i'm able to ping them.
+ Yes, I'm able to ping them.
 
  Output:  
  PING c2 (172.24.0.3): 56 data bytes
@@ -591,6 +592,7 @@ docker exec c1 ping c2
  ```
    
 3. What is different from the previous ping in the section above? ***(1 mark)***
+   
  ```bash
 The difference is that in the successful ping, c1 received ICMP echo        replies from c2, indicating they can communicate over the network while the unsuccessful ping did not receive any ICMP echo replies from c2, indicating a lack of communication over the network.
  ```
