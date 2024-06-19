@@ -527,7 +527,7 @@ docker run -itd --net rednet --name c2 busybox sh
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
    
-   ```bash
+ ```bash
 BusyBox: A lightweight software suite providing many common Unix utilities in a single executable, great for devices with limited resources and Docker containers.
 
 Command Switch --name:In Docker, this option gives a specific name to a container, making it easier to manage.
