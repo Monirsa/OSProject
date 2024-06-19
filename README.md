@@ -1,7 +1,7 @@
 # OSProject Running Containers for Application Development
 
 Group Name: He&She 
-Section: test here
+Section: 3
 
 Team Mates:
 1. Monir - 2128031
@@ -25,7 +25,10 @@ Team Mates:
 ***Questions:***
 
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __XXXXXXXXX__.
-2. How many files and folders are in this repository. ***(1 mark)*** __7 files and 1 folder__.
+2. How many files and folders are in this repository. ***(1 mark)*** 
+```bash
+7 files and 1 folder
+```
 
 ## Exploring github codespaces
 
@@ -56,16 +59,21 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Linux__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+```bash
+Linux
+```
 
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+```bash
 - Standard option which includes 2 vCPUs,4GB of RAM and 64 GB of disk space .
 - High-performance option which includes 4 vCPUs,8GB of RAM and 64 GB of disk space.
-__.
+```
 
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
+```bash
 This is to ensure that you able to keep your local repository updated with the latest changes that made by other contributors
-__.
+```
 
 ## Exploring the Terminal
 
@@ -82,12 +90,13 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __
+1. Run the command **pwd** . ***(1 mark)*** 
+```bash
 /workspaces/OSProject
-__.
+```
 
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
-__
+```bash
 cat: /etc/passwdcat: No such file or directory
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -114,9 +123,10 @@ systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
 messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin 
-__.
+```
 
-3. Run the command **df** . ***(1 mark)*** __
+3. Run the command **df** . ***(1 mark)*** 
+```bash
 Filesystem     1K-blocks     Used Available Use% Mounted on
 overlay         32847680 10382672  20770908  34% /
 tmpfs              65536        0     65536   0% /dev
@@ -124,10 +134,11 @@ shm                65536        0     65536   0% /dev/shm
 /dev/root       30298176 24418584   5863208  81% /vscode
 /dev/sda1       46127956      136  43752244   1% /tmp
 /dev/loop3      32847680 10382672  20770908  34% /workspaces
-__.
+```
 
 4. Run the command **du** . ***(1 mark)*** 
-__4       ./.git/branches
+```bash
+4       ./.git/branches
 8       ./.git/objects/1b
 8       ./.git/objects/c4
 8       ./.git/objects/83
@@ -229,29 +240,32 @@ __4       ./.git/branches
 2772    ./.git
 1972    ./images
 4768    .
-__.
+```
 
 5. Run the command **ls** . ***(1 mark)*** 
-__
+```bash
 README.md  images
-__.
+```
 
 6. Run the command **ls -asl** . ***(1 mark)*** 
-__total 40
+```bash
+total 40
  4 drwxrwxrwx+ 4 codespace root  4096 Jun 18 14:10 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun 18 14:10 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun 18 15:06 .git
 24 -rw-rw-rw-  1 codespace root 21766 Jun 18 15:09 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jun 18 14:10 images
- __.
+ ```
 
-7. Run the command **free -h** . ***(1 mark)*** __
+7. Run the command **free -h** . ***(1 mark)*** 
+```bash
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.6Gi       476Mi        65Mi       5.7Gi       5.8Gi
 Swap:            0B          0B          0B
-__.
+```
 
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
+```bash
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -307,10 +321,10 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
-__.
+```
 
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
-__
+```bash
 processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -349,26 +363,47 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   5919.4 avail Mem
    2361 codespa+  20   0 1240308  54668  41344 S   0.0   0.7   0:00.27 node                                              
    2505 codespa+  20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh                                                
    2559 root      20   0    2616   1536   1536 S   0.0   0.0   0:00.00 sh 
-   __.
-10. Run the command **uname -a**. ***(1 mark)*** __
+   ```
+10. Run the command **uname -a**. ***(1 mark)*** 
+```bash
 Linux codespaces-c6c5a2 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
-__.
-11. What is the available free memory in the system. ***(1 mark)*** __5.8Gi__.
+```
 
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __20770908 1K-blocks__.
+11. What is the available free memory in the system. ***(1 mark)*** 
+```bash
+5.8Gi
+```
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Linux version 6.5.0-1021-azure, hardware architecture x86_64__.
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+```bash
+20770908 1K-blocks
+```
 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __
-**ls** is the list of visible files and directories in the currect directory.
-**ls -asl** is the list of files and directories with detailed information that consist of -a (all files including hidden files) , -s (size in blocks) and -l (long format) files . 
-__.
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** ```bash
+Linux version 6.5.0-1021-azure, hardware architecture x86_64
+```
 
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__.
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+```bash
+ls is the list of visible files and directories in the currect directory.
+ls -asl is the list of files and directories with detailed information that consist of -a (all files including hidden files) , -s (size in blocks) and -l (long format) files . 
+```
 
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __2643.197 MHz__.
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+```bash
+2560 4K pages
+```
 
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __PID 3609__.
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+```bash
+2643.197 MHz
+```
+
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+```bash
+PID 3609__.
+```
+
 #
 ## Running your own container instance.
 
