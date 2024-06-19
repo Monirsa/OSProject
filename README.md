@@ -537,11 +537,11 @@ Command Switch --name: In Docker, this option gives a specific name to a contain
 
  ```bash
 NETWORK ID     NAME      DRIVER    SCOPE
-fc44ebf81d95   bluenet   bridge    local
-7e7dec229678   bridge    bridge    local
-be5b5d67c9de   host      host      local
-3fb7393dd0a3   none      null      local
-92973e9ac607   rednet    bridge    local
+6e59fb7b9212   bluenet   bridge    local
+95f40d6c3cc3   bridge    bridge    local
+5e40b0bc9a94   host      host      local
+7c55633bc200   none      null      local
+ca3e6dc08fd3   rednet    bridge    local
  ```
 
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
@@ -577,8 +577,23 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)***
+ ```bash
+ Yes, i'm able to ping them.
+
+ Output:  
+ PING c2 (172.24.0.3): 56 data bytes
+  64 bytes from 172.24.0.3: seq=0 ttl=64 time=0.126 ms
+  64 bytes from 172.24.0.3: seq=1 ttl=64 time=0.085 ms
+  64 bytes from 172.24.0.3: seq=2 ttl=64 time=0.084 ms
+  64 bytes from 172.24.0.3: seq=3 ttl=64 time=0.090 ms
+  64 bytes from 172.24.0.3: seq=4 ttl=64 time=0.087 ms
+ ```
+   
+3. What is different from the previous ping in the section above? ***(1 mark)***
+ ```bash
+The difference is that in the successful ping, c1 received ICMP echo        replies from c2, indicating they can communicate over the network while the unsuccessful ping did not receive any ICMP echo replies from c2, indicating a lack of communication over the network.
+ ```
 
 ## Intermediate Level (10 marks bonus)
 
