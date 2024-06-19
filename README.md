@@ -530,7 +530,7 @@ docker run -itd --net rednet --name c2 busybox sh
  ```bash
 BusyBox: A lightweight software suite providing many common Unix utilities in a single executable, great for devices with limited resources and Docker containers.
 
-Command Switch --name:In Docker, this option gives a specific name to a container, making it easier to manage.
+Command Switch --name: In Docker, this option gives a specific name to a container, making it easier to manage.
  ```
 
 2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
