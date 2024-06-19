@@ -187,9 +187,10 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
-
 ```
-*** __Fill answer here__.***
+```bash
+chown: cannot access 'myroot': No such file or directory
+```
 
 ## You are on your own, create your own static webpage
 
