@@ -1,11 +1,16 @@
 # OSProject Running Containers for Application Development
 
+<<<<<<< HEAD
 Group Name: He&She 
+=======
+Group Name: He&She
+
+>>>>>>> origin/main
 Section: 3
 
 Team Mates:
 1. Monir - 2128031
-2. Nur Ain Mohamad Hisham - 2216894
+2. Nur Ain Binti Mohamad Hisham - 2216894
 3. Azwa Nurnisya Binti Ayub - 2217418
 
 ## Rules
@@ -24,11 +29,22 @@ Team Mates:
 
 ***Questions:***
 
+<<<<<<< HEAD
 1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __XXXXXXXXX__.
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
 7 files and 1 folder
 ```
+=======
+1. What is the link of the fork OSProject in your repository. ***(1 mark)***
+  ```bash
+   https://github.com/Monirsa/OSProject
+ ```
+2. How many files and folders are in this repository. ***(1 mark)***
+ ```bash
+   7 files and 1 folder
+ ```
+>>>>>>> origin/main
 
 ## Exploring github codespaces
 
@@ -559,11 +575,47 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***
+   
+ ```bash
+BusyBox: A lightweight software suite providing many common Unix utilities in a single executable, great for devices with limited resources and Docker containers.
+
+Command Switch --name: In Docker, this option gives a specific name to a container, making it easier to manage.
+ ```
+
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)***
+
+ ```bash
+NETWORK ID     NAME      DRIVER    SCOPE
+6e59fb7b9212   bluenet   bridge    local
+95f40d6c3cc3   bridge    bridge    local
+5e40b0bc9a94   host      host      local
+7c55633bc200   none      null      local
+ca3e6dc08fd3   rednet    bridge    local
+ ```
+
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
+   
+ ```bash
+bluenet: 172.22.0.1
+rednet: 172.23.0.1
+ ```
+
+4. What is the network address for the running container c1 and c2? ***(1 mark)***
+   
+ ```bash
+c1: 172.22.0.2
+c2: 172.23.0.2
+ ```
+
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
+   
+ ```bash
+No, an error occurs hence, it cannot ping.
+
+Output: ping: bad address 'c2'
+ ```
+
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -575,8 +627,25 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)***
+   
+ ```bash
+ Yes, I'm able to ping them.
+
+ Output:  
+ PING c2 (172.24.0.3): 56 data bytes
+  64 bytes from 172.24.0.3: seq=0 ttl=64 time=0.126 ms
+  64 bytes from 172.24.0.3: seq=1 ttl=64 time=0.085 ms
+  64 bytes from 172.24.0.3: seq=2 ttl=64 time=0.084 ms
+  64 bytes from 172.24.0.3: seq=3 ttl=64 time=0.090 ms
+  64 bytes from 172.24.0.3: seq=4 ttl=64 time=0.087 ms
+ ```
+   
+3. What is different from the previous ping in the section above? ***(1 mark)***
+   
+ ```bash
+The difference is that in the successful ping, c1 received ICMP echo        replies from c2, indicating they can communicate over the network while the unsuccessful ping did not receive any ICMP echo replies from c2, indicating a lack of communication over the network.
+ ```
 
 ## Intermediate Level (10 marks bonus)
 
