@@ -1,11 +1,6 @@
 # OSProject Running Containers for Application Development
 
-<<<<<<< HEAD
 Group Name: He&She 
-=======
-Group Name: He&She
-
->>>>>>> origin/main
 Section: 3
 
 Team Mates:
@@ -29,22 +24,15 @@ Team Mates:
 
 ***Questions:***
 
-<<<<<<< HEAD
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __XXXXXXXXX__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+```bash
+https://github.com/Monirsa/OSProject
+```
+
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
 7 files and 1 folder
 ```
-=======
-1. What is the link of the fork OSProject in your repository. ***(1 mark)***
-  ```bash
-   https://github.com/Monirsa/OSProject
- ```
-2. How many files and folders are in this repository. ***(1 mark)***
- ```bash
-   7 files and 1 folder
- ```
->>>>>>> origin/main
 
 ## Exploring github codespaces
 
