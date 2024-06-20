@@ -1,6 +1,7 @@
 # OSProject Running Containers for Application Development
 
 Group Name: He&She 
+
 Section: 3
 
 Team Mates:
@@ -31,7 +32,7 @@ https://github.com/Monirsa/OSProject
 
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
-7 files and 1 folder
+8 files and 2 folders
 ```
 
 ## Exploring github codespaces
@@ -383,7 +384,8 @@ Linux codespaces-c6c5a2 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08
 20770908 1K-blocks
 ```
 
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** ```bash
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)***
+```bash
 Linux version 6.5.0-1021-azure, hardware architecture x86_64
 ```
 
@@ -405,7 +407,7 @@ ls -asl is the list of files and directories with detailed information that cons
 
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
 ```bash
-PID 3609__.
+PID 3609
 ```
 
 #
