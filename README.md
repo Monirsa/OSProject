@@ -25,8 +25,14 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __XXXXXXXXX__.
-2. How many files and folders are in this repository. ***(1 mark)*** __7 files and 1 folder__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)***
+  ```bash
+   https://github.com/Monirsa/OSProject
+ ```
+2. How many files and folders are in this repository. ***(1 mark)***
+ ```bash
+   7 files and 1 folder
+ ```
 
 ## Exploring github codespaces
 
