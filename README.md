@@ -32,7 +32,7 @@ https://github.com/Monirsa/OSProject
 
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
-8 files and 2 folders
+9 files and 3 folders (images-6 files,webpage-1 file,node.js-1 file, README file) 
 ```
 
 ## Exploring github codespaces
@@ -778,9 +778,35 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
+```bash
+The error "localhost refused to connect" suggests the web server at http://localhost:3000 isn't running or isn't configured correctly.
+```
+2. Show the instruction needed to make this work. ***(1 mark)*** 
+```bash
+ 1. Ensure Node.js Application is Running:
+ 
+    command: node index.js
 
+ 2. Check Port Configuration:
+
+    app.listen(3000, () => {
+        console.log('Server is running on http://localhost:3000');
+    });
+
+ 3. Ensure that port 3000 is not blocked by the firewall or any security software
+
+ 4. Look at the server logs for any errors or messages that might indicate why the server isn't running correctly.
+
+ 5. Clear browser cache or try accessing the site in an incognito window to avoid cached issues.
+
+ 6. Double-check that you are using the correct address in your browser:
+   
+   http://localhost:3000
+
+ 7. Confirm Server Status:
+Use a tool like curl or another browser to confirm the server status and see if it's accessible.  
+```
 
 
 ## What to submit
